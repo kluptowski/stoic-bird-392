@@ -1,0 +1,19 @@
+{
+  "apps": {
+    "acme-demo-2577": {
+      "name": "acme-demo-2577",
+      "app_id": "A05DUR6EWNP",
+      "enterprise_id": "E03PA63NREC",
+      "team_id": "T042XGXKGTA",
+      "IsDev": false
+    },
+    "sales-demo-2057": {
+      "name": "sales-demo-2057",
+      "app_id": "A0641NHSAE7",
+      "enterprise_id": "E0357ABDZHN",
+      "team_id": "T034W6QKEQH",
+      "IsDev": false
+    }
+  },
+  "default": "acme-demo-2577"
+}
