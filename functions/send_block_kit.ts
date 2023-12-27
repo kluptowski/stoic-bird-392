@@ -8,8 +8,8 @@ import { DefineFunction, Schema, SlackFunction } from "deno-slack-sdk/mod.ts";
  */
 export const SendBlockKitDefinition = DefineFunction({
   callback_id: "send_block_kit",
-  title: "Send Formatted Message",
-  description: "Send a Block Kit message",
+  title: "Send Block Kit Message",
+  description: "(Smock) Send a Block Kit message",
   source_file: "functions/send_block_kit.ts",
   input_parameters: {
     properties: {
@@ -77,7 +77,7 @@ const parseJSON = (jsonString: string) => {
     if (parsedJSON && typeof parsedJSON === "object") {
       return parsedJSON;
     }
-  } catch (error) {
+  } catch (_error) {
     // error
   }
   return false;

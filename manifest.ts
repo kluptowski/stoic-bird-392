@@ -1,6 +1,6 @@
 import { Manifest } from "deno-slack-sdk/mod.ts";
 import { SendBlockKitDefinition } from "./functions/send_block_kit.ts";
-import { GreetingFunctionDefinition } from "./functions/greeting_function.ts";
+import { RichTextFunctionDefinition } from "./functions/richtext_function.ts";
 import { TextInputFunction } from "./functions/text_input_function.ts";
 
 /**
@@ -9,13 +9,13 @@ import { TextInputFunction } from "./functions/text_input_function.ts";
  * https://api.slack.com/automation/manifest
  */
 export default Manifest({
-  name: "stoic-bird-392",
+  name: "SE Tooling",
   description: "Send Block Kit JSON messages",
-  icon: "assets/logo-open-ai.png",
+  icon: "assets/slack black and white outline.png",
   workflows: [],
   functions: [
     SendBlockKitDefinition,
-    GreetingFunctionDefinition,
+    RichTextFunctionDefinition,
     TextInputFunction,
   ],
   outgoingDomains: [],
