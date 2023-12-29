@@ -15,7 +15,9 @@ export const RichTextFunctionDefinition = DefineFunction({
     properties: {
       rich_text: {
         type: Schema.slack.types.rich_text,
-        title: "Enter Custom Block Here",
+        title: "Write Your Demo Text Here",
+        hint:
+          "Use this field to dynamically reference blocks of rich text in your demo",
         description: "Random string of text",
       },
     },

@@ -1,7 +1,6 @@
 import { Manifest } from "deno-slack-sdk/mod.ts";
 import { SendBlockKitDefinition } from "./functions/send_block_kit.ts";
 import { RichTextFunctionDefinition } from "./functions/richtext_function.ts";
-import { TextInputFunction } from "./functions/text_input_function.ts";
 
 /**
  * The app manifest contains the app's configuration. This
@@ -16,7 +15,6 @@ export default Manifest({
   functions: [
     SendBlockKitDefinition,
     RichTextFunctionDefinition,
-    TextInputFunction,
   ],
   outgoingDomains: [],
   datastores: [],
